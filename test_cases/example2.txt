@@ -1,0 +1,5 @@
+<expr>   ::= <term> <expr'>
+<expr'>  ::= "+" <term> <expr'> | ε
+<term>   ::= <factor> <term'>
+<term'>  ::= "*" <factor> <term'> | ε
+<factor> ::= "(" <expr> ")" | number
